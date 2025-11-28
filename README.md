@@ -6,7 +6,8 @@ For **Edge Browser**, you can download the [pubmed_addon.zip](https://github.com
 For **Firefox Browser**, download the [pubmed_addon.xpi](https://github.com/BryanWang0702/pubmed_addon/tree/master/pubmed_addon.xpi) file (do not unpack), go to [about:addons](about:addons) firefox addon management, select `install addon from file`, and select the xpi file.
 
 The impact factor, JCR quantile, scihub link, and PMC free link will display like this:
-Search Page:
+
+### Search Page:
 ![Search page](imgs/search_page.png)
-Article Page
+### Article Page
 ![Article Page](imgs/article_page.png)
