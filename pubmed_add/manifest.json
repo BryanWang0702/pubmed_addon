@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "PubMed Impact Factor Viewer",
+  "version": "1.0",
+  "description": "Show Impact Factor and Quartile on PubMed",
+  "permissions": ["activeTab"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://pubmed.ncbi.nlm.nih.gov/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "https://pubmed.ncbi.nlm.nih.gov/*"
+  ],
+  "browser_specific_settings": {
+  "gecko": {
+    "id": "xueqiang@westlake",
+        "data_collection_permissions": {
+          "required": [
+             "locationInfo"
+          ],
+          "optional": [
+             "technicalAndInteraction"
+          ]
+         }
+  },
+  "safari": {
+    "strict_min_version": "14",
+    "strict_max_version": "20"
+  }
+}
+}
